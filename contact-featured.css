@@ -1,0 +1,33 @@
+/* contact featured styling */
+.contact-featured-container{
+    width: 100%;
+}
+.contact-featured-container .contact-featured-img{
+    width: 100%;
+    aspect-ratio: 355/300;
+    overflow: hidden;
+}
+.contact-featured-container .contact-featured-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+.contact-featured-text-component .contact-me-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+@media screen and (min-width:922px) {
+    .contact-featured{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact-featured-img, .contact-featured-text-component{
+        flex: 0 0 calc(50% - 30px);
+    }
+    
+}
